@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="EduChamp : Education HTML Template" />
+
+    <!-- OG -->
+    <meta property="og:title" content="EduChamp : Education HTML Template" />
+    <meta property="og:description" content="EduChamp : Education HTML Template" />
+    <meta property="og:image" content="" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>EduChamp : Education HTML Template </title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+
+    <!-- SHORTCODES ============================================= -->
+    <link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
+    <style>
+        .accordion {
+            margin-top: 40px;
+        }
+
+        .accordion .card {
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .accordion .card h2 {
+            background: url(https://cdn0.iconfinder.com/data/icons/entypo/91/arrow56-512.png) no-repeat calc(100% - 10px) center;
+            background-size: 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .accordion .card h2.collapsed {
+            background-image: url(https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/expand2-256.png);
+        }
+
+        .accordion .card-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .nav {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .section-sp1 {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            background-color: var(--primary);
+            border-color: #dee2e6 #dee2e6 #fff;
+            margin: auto;
+            border-bottom: 0px;
+            border-right: 0px;
+            height: 38px;
+            text-align: center;
+            color: white;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link {
+            color: #4c1864;
+            border-color: #dee2e6 #dee2e6 #dee2e6;
+            text-align: center;
+            font-weight: 600;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 38px 36px;
+        }
+/*  */
+        .head .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            background-color: #f7b205;
+            border-color: #dee2e6 #dee2e6 #fff;
+            /* width: 150px; */
+            height: 50px;
+            text-align: center;
+            color: white;
+            
+        }
+
+        .head .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link {
+            color: #4c1864;
+            border-color: #dee2e6 #dee2e6 #fff;
+            /* width: 150px; */
+            border-bottom: 1px solid transparent;
+            text-align: center;
+            font-weight: 600;
+            /* color: white; */
+            height: 50px;
+            padding: 0.5rem 1rem;
+        }
+        .section-sp2 {
+            padding-top: 50px !important;
+        }
+
+        .card-head {
+            border: 1px solid #f4f4f4;
+            border-radius: 3px;
+            background: #f4f4f4;
+            padding: 10px;
+        }
+
+        .card-head h2 {
+            /* color: white; */
+            margin-left: 10px;
+        }
+
+        .card-body .description {
+            padding: 0px 40px;
+        }
+
+        .card-body .details {
+            padding: 0px 60px;
+            color: grey;
+        }
+
+        .owl-next {
+            position: absolute;
+            right: 10px;
+            top: 4px;
+            opacity: 0.7;
+        }
+
+        .owl-prev {
+            position: absolute;
+            left: 10px;
+            top: 4px;
+            opacity: 0.7;
+        }
+
+        .owl-item {
+            width: unset !important;
+            margin-right: 0px !important;
+        }
+
+        .owl-nav {
+            margin-top: 0px !important;
+        }
+
+        .skills {
+            padding: 30px 20px;
+            padding-bottom: 0px;
+            cursor: pointer;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .block-ellipsis {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+
+        .skills .caption h2 {
+            position: relative;
+            display: block;
+            padding: 5px 0;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #2b2a2a;
+            font-weight: 600;
+            font-family: 'Open Sans', sans-serif !important;
+            margin-bottom: 0;
+            line-height: 26px;
+            height: 65px;
+        }
+
+        .cnt-boxes {
+            margin-bottom: 14px;
+        }
+
+        .nav-link {
+            border-radius: 0px !important;
+        }
+
+        .post-sections {
+            width: 100%;
+            background: #fff;
+            margin-bottom: 50px;
+            -webkit-box-shadow: 0 0 18px 0 rgb(156 148 148 / 12%);
+            box-shadow: 0 0 18px 0 rgb(156 148 148 / 12%);
+            padding: 30px;
+            border-radius: 6px;
+            border: 1px solid #f1f1f1;
+            margin-top: 50px;
+        }
+
+        #upcoming_batches {
+            box-shadow: 0 1px 9px 0 rgb(179 179 179 / 9%);
+            border-radius: 4px;
+            background: #fff;
+            border: 1px solid #f1f1f1;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        .piece-content {
+            font-size: 14px;
+            color: #252525;
+            line-height: 26px;
+        }
+
+        .batch-table .batch-row {
+            border-bottom: 1px solid #f1f1f1;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            color: #403c3c;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+        }
+
+        .sm-text {
+            font-size: 12px;
+        }
+
+        .contact_us_inner p {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .course-detail .nav-link {
+            padding: unset;
+            font-size: 12px;
+        }
+
+        .course-detail .nav-item {
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .clearfix button {
+            margin: 0px 16px;
+            padding: 8px 16px;
+        }
+
+        .piece-content ul {
+            margin-bottom: 20px;
+            float: left;
+            width: 100%;
+        }
+
+        .list-column1 {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 0;
+            align-items: center;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 5px;
+            color: #252525;
+            list-style: none;
+        }
+
+        .list-column1 li {
+            display: inline-flex;
+            margin: 10px;
+            width: 140px;
+            border: 1px solid #e9e9e9;
+            padding: 10px;
+            background: #fff;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .piece-content ul.dotted-list li {
+            padding-left: 30px;
+        }
+
+        .piece-content .dotted-list li:before {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            content: '';
+            left: 0;
+            top: 6px;
+            background: url(//www.acte.in/wp-content/themes/acte/assets/css/../images/rightarrow.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+
+        .fixedform {
+            position: fixed;
+            width: 395px;
+            top: 85px;
+        }
+
+        .inputUI input {
+            height: 34px !important;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        textarea.form-control {
+            height: 94px;
+        }
+
+        .course-points {
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            width: 100%;
+            margin-top: -100px;
+        }
+
+        .course-points li {
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 15px 20px;
+            border-right: 1px solid rgba(255, 255, 255, .1);
+            text-align: center;
+        }
+
+        .course-points li span {
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+            text-transform: capitalize;
+            margin-bottom: 0;
+            display: block;
+        }
+
+        .course-points li strong {
+            font-size: 24px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 7px;
+            font-weight: 500;
+            display: block;
+        }
+
+        .page-banner {
+            height: 400px;
+        }
+
+        .video-duration {
+            position: absolute;
+            right: 46px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .back{
+            background-color: red;
+        }
+        .card-header {
+    padding: 10px 15px;
+}
+    .card-bodys {
+    padding: 10px 15px;
+}
+.projecturl{
+    font-size: 12px;
+    color: black;
+}
+.border-left {
+    border-left: 1px solid #c4c4c4;
+}
+    </style>
+</head>
+
+<body id="bg">
+    <div class="page-wraper">
+        <div id="loading-icon-bx"></div>
+        <!-- Header Top ==== -->
+        <header class="header rs-nav">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="topbar-left">
+                            <ul>
+                                <li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+                                <li><a href="javascript:;"><i class="fa fa-envelope-o"></i>Support@website.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-right">
+                            <ul>
+                                <li>
+                                    <select class="header-lang-bx">
+                                        <option data-icon="flag flag-uk">English UK</option>
+                                        <option data-icon="flag flag-us">English US</option>
+                                    </select>
+                                </li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header END ==== -->
+        <!-- Content -->
+        <div class="page-content bg-white">
+            <!-- inner page banner -->
+            <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
+                <div class="container">
+                    <div class="page-banner-entry">
+                        <h1 class="text-white" id="CoursesName"></h1>
+                    </div>
+
+                </div>
+                <div class="container-fluid">
+                    <div class="textwidget custom-html-widget">
+                        <ul class="d-flex align-items-center justify-content-start course-points" id="bannerdetail">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb row -->
+
+            <!-- Breadcrumb row END -->
+            <!-- inner page banner END -->
+            <div class="content-block">
+                <!-- <div class="feature-filters clearfix center mb-2 mt-4">
+                    <ul class="filters" id="sub-item">
+                        <li class="btn"><input type="radio"><a class="sub-list" href="#overview"><span>Overview</span></a></li>
+                        <li class="btn"><input type="radio"><a class="sub-list" href="#Batches"><span>Batches</span></a></li>
+                        <li class="btn"><input type="radio"><a class="sub-list" href="#trainers"><span>Trainers</span></a></li>
+                        <li class="btn"><input type="radio"><a class="sub-list" href="#review"><span>Reviews</span></a></li>
+                        <li class="btn"><input type="radio"><a class="sub-list" href="#certifications"><span>Certifications</span></a></li>
+                        <li class="btn"><input type="radio"><a class="sub-list" href="#placements"><span>Placements</span></a></li>
+                        <li class="btn"><input type="radio"><a class="sub-list" href="#projects"><span>Projects</span></a></li>
+
+                    </ul>
+                </div> -->
+                <div class="head" id="sticky-header-sm">
+                <nav class="nav nav-tabs mt-4" id="myTab" role="tablist">
+                    <a class="nav-item nav-link" href="#overview">Overview</a>
+                    <a class="nav-item nav-link" href="#Batches">Batches</a>
+                    <a class="nav-item nav-link" href="#trainers">Trainers</a>
+                    <a class="nav-item nav-link" href="#review">Reviews</a>
+                    <a class="nav-item nav-link" href="#certifications">Certifications</a>
+                    <a class="nav-item nav-link" href="#placements">Placements</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <!-- <a class="nav-item nav-link" href="#interview">Interview Que</a> -->
+                </nav>
+            </div>
+                <!-- <nav class="nav nav-tabs owl-carousel owl-theme mt-4" id="myTab">
+                    <a class="item nav-item nav-link active" href="#overview"><i class="fa fa-home"></i>Overview</a>
+                    <a class="item nav-item nav-link" href="#Batches"><i class="fa fa-home"></i>Batches</a>
+                    <a class="item nav-item nav-link" href="#trainers"><i class="fa fa-home"></i>Trainers</a>
+                    <a class="item nav-item nav-link" href="#review"><i class="fa fa-home"></i>Reviews</a>
+                    <a class="item nav-item nav-link" href="#certifications"><i
+                            class="fa fa-home"></i>Certifications</a>
+                    <a class="item nav-item nav-link" href="#placements"><i class="fa fa-home"></i>Placements</a>
+                    <a class="item nav-item nav-link" href="#projects"><i class="fa fa-home"></i>Projects</a>
+                </nav> -->
+                <div class="container">
+                    <div class="container mb-4" id="overview">
+                        <div class="row">
+                            <!-- <div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+                                    <div class="course-detail-bx">
+                                        <div class="course-price">
+                                            <del>$190</del>
+                                            <h4 class="price">$120</h4>
+                                        </div>
+                                        <div class="course-buy-now text-center">
+                                            <div class="teacher-info">
+
+                                                <div class="teacher-name">
+                                                    <h5 style="    background: #f7b205;
+                                                    padding: 10px;
+                                                    border-radius: 10px;">Upcoming Batches</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="teacher-bx">
+                                            <div class="course-info-list scroll-page">
+                                                <ul class="navbar">
+                                                    <li>
+
+
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <a href="">Mon - Fri </a>
+                                                                <p>week days</p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <p>(08:00)</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li><a class="nav-link" href="#curriculum"><i class="ti-bookmark-alt"></i>Curriculum</a></li>
+                                                    <li><a class="nav-link" href="#instructor"><i class="ti-user"></i>Instructor</a></li>
+                                                    <li><a class="nav-link" href="#reviews"><i class="ti-comments"></i>Reviews</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cours-more-info">
+                                            <div class="review">
+                                                <span>3 Review</span>
+                                                <ul class="cours-star">
+                                                    <li class="active"><i class="fa fa-star"></i></li>
+                                                    <li class="active"><i class="fa fa-star"></i></li>
+                                                    <li class="active"><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="price categories">
+                                                <span>Categories</span>
+                                                <h5 class="text-primary">Frontend</h5>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn radius-xl text-uppercase">Book Now</a>
+
+                                    </div>
+                                </div> -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
+
+                                <div class="courese-overview" id="overview">
+                                    <h4>Overview</h4>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-8">
+                                            <div class="container">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="card">
+                                                        <div class="card-head" id="headingOne">
+                                                            <h2 class="mb-0 collapsed" data-toggle="collapse"
+                                                                data-target="#collapseOne" aria-expanded="false"
+                                                                aria-controls="collapseOne">
+                                                                Collapsible Group Item #1
+                                                                <span class="video-duration">time</span>
+                                                            </h2>
+                                                        </div>
+                                                        <div id="collapseOne" class="collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-parent="#accordionExample">
+                                                            <div class="card-body pb-0">
+                                                                <p class="mb-0 description" data-toggle="collapse"
+                                                                    data-target="#desOne" aria-expanded="true">
+                                                                    Description 2 <span><i
+                                                                            class="fa fa-chevron-down ml-2"
+                                                                            aria-hidden="true"></i></span>
+                                                                    <span class="video-duration">time</span>
+                                                                </p>
+                                                                <div id="desOne" class="collapse ">
+                                                                    <div class="card-body pb-0">
+                                                                        <p class="details">
+                                                                            details
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-head" id="headingTwo">
+                                                            <h2 class="mb-0 collapsed" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                                Collapsible Group Item #2
+                                                            </h2>
+                                                        </div>
+                                                        <div id="collapseTwo" class="collapse"
+                                                            aria-labelledby="headingTwo"
+                                                            data-parent="#accordionExample">
+                                                            <div class="card-body">
+                                                                <p class="mb-0" data-toggle="collapse"
+                                                                    data-target="#desTwo" aria-expanded="true">
+                                                                    Description 2
+                                                                </p>
+                                                                <div id="desTwo" class="collapse ">
+                                                                    <div class="card-body">
+                                                                        details
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <ul class="course-features">
+                                                <li><i class="ti-book"></i> <span class="label">Lectures</span>
+                                                    <span class="value">8</span>
+                                                </li>
+                                                <li><i class="ti-help-alt"></i> <span class="label">Quizzes</span>
+                                                    <span class="value">1</span>
+                                                </li>
+                                                <li><i class="ti-time"></i> <span class="label">Duration</span>
+                                                    <span class="value">60 hours</span>
+                                                </li>
+                                                <li><i class="ti-stats-up"></i> <span class="label">Skill
+                                                        level</span> <span class="value">Beginner</span></li>
+                                                <li><i class="ti-smallcap"></i> <span class="label">Language</span>
+                                                    <span class="value">English</span>
+                                                </li>
+                                                <li><i class="ti-user"></i> <span class="label">Students</span>
+                                                    <span class="value">32</span>
+                                                </li>
+                                                <li><i class="ti-check-box"></i> <span class="label">Assessments</span>
+                                                    <span class="value">Yes</span></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" id="st">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+
+                            <!-- Batches -->
+                            <div class="container" id="Batches">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+                                        <div id="upcoming_batches" class="post-sections mt-0 pb-0 pt-3 ">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 text-center heading-bx mb-3">
+                                                <h2 class="title-head m-b0 ">Batches</span></h2>
+                                                <!-- <p class="m-b0 pt-0">Our courses catalogue enable individuals and teams to
+                                                    perform. </p> -->
+                                            </div>
+                                            <div class="piece-content">
+                                                <div class="batch-table" id="batch-table">
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Batches END -->
+                            <!-- Trainers -->
+                            <div class="container post-sections" id="trainers">
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 text-center heading-bx mb-3">
+                                            <h2 class="title-head m-b0 ">Why to Choose Us</span></h2>
+                                            <p class="m-b0 pt-0">Our courses catalogue enable individuals and teams to
+                                                perform. </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills">
+                                                <div class="cnt-boxes color-blue"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>Flexible timings</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">Our real-time professionals helps you to
+                                                        learn any...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills">
+                                                <div class="cnt-boxes color-green"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>Fully Hands-On-Training</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">earn anytime from anywhere. Utilize
+                                                        your...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills ">
+                                                <div class="cnt-boxes color-pink"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>17000+ Student Last Year</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">95% positive feedback. Have a look of...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills">
+                                                <div class="cnt-boxes color-yellow"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>Affordable Fees</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">No matter what your current issue is...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills">
+                                                <div class="cnt-boxes color-red-dark"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>Corporate Expert Trainer</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">best certified trainer &amp; real time
+                                                        projects...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills">
+                                                <div class="cnt-boxes color-yellow-dark"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>Updated Syllabus</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">best curriculum designed by industrial
+                                                        expert....</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills ">
+                                                <div class="cnt-boxes color-green-dark"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>Earn a Global Certificate</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">accredited by all major global companies
+                                                        around the world...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="skills">
+                                                <div class="cnt-boxes color-blue-dark"><img
+                                                        src="./assets/images/why-us/why-tatva-cycle-development.svg"
+                                                        alt="" width="60" height="60"></div>
+                                                <div class="caption">
+                                                    <h2>Lifetime Study Material</h2>
+                                                    <div class="line"></div>
+                                                    <p class="block-ellipsis">Access Study Materials, Videos &amp; Top
+                                                        MNC Interview Question...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- Trainers END -->
+                            <!-- Certification -->
+                            <div class="container post-sections" id="certifications">
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <div class="piece-content">
+                                            <div class="clearfix">
+                                                <div class="heading-text">
+                                                    <h2>Get Certified By Oracle &amp; Industry Recognized ACTE
+                                                        Certificate
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <p>Acte Certification is Accredited by all major Global
+                                                            Companies
+                                                            around the
+                                                            world. We provide after completion of the theoretical and
+                                                            practical sessions
+                                                            to fresher's as well as corporate trainees.</p>
+                                                        <p>Our certification at Acte is accredited worldwide. It
+                                                            increases
+                                                            the value of
+                                                            your resume and you can attain leading job posts with the
+                                                            help
+                                                            of this
+                                                            certification in leading MNC's of the world. The
+                                                            certification
+                                                            is only
+                                                            provided after successful completion of our training and
+                                                            practical based
+                                                            projects.</p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/04/student-certificate.png"
+                                                                alt="" width="650" height="500"
+                                                                class="alignnone size-full wp-image-6316" /></noscript><img
+                                                            src="https://www.acte.in/wp-content/uploads/2020/04/student-certificate.png"
+                                                            data-src="https://www.acte.in/wp-content/uploads/2020/04/student-certificate.png"
+                                                            alt="" width="650" height="500"
+                                                            class="alignnone size-full wp-image-6316 lazyloaded">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <div class="sub-head clearfix">
+                                                            <h4>Complete Your Course</h4>
+                                                            <p>a downloadable Certificate in PDF format, immediately
+                                                                available to you
+                                                                when you complete your Course</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="sub-head clearfix">
+                                                            <h4>Get Certified</h4>
+                                                            <p>a physical version of your officially branded and
+                                                                security-marked
+                                                                Certificate.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-center"><a style="font-size: 14px;margin-top: 15px;"
+                                                    href="/payment" class="btn btn-primary btn-sm btn-dark"> <i
+                                                        class="fa fa-paper-plane" aria-hidden="true"></i> Get Certified
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Certification END -->
+                            <!-- Placements -->
+                            <div class="container post-sections" id="placements">
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <div id="placementsec">
+                                            <div class="piece-content">
+                                                <div class="clearfix">
+                                                    <div class="heading-text">
+                                                        <h2>Our Top Hiring Partner for Placements</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <p><strong>ACTE Chennai offers placement opportunities as add-on to
+                                                            every student / professional who completed our classroom or
+                                                            online training. Some of our students are working in these
+                                                            companies listed below.</strong></p>
+                                                    <ul class="dotted-list">
+                                                        <li>We are associated with top organizations like HCL, Wipro,
+                                                            Dell,
+                                                            Accenture, Google, CTS, TCS, IBM etc. It make us capable to
+                                                            place our students in top MNCs across the globe</li>
+                                                        <li>We have separate student’s portals for placement, here you
+                                                            will
+                                                            get all the interview schedules and we notify you through
+                                                            Emails.</li>
+                                                        <li>After completion of 70% Selenium course content, we will
+                                                            arrange
+                                                            the interview calls to students &amp; prepare them to F2F
+                                                            interaction</li>
+                                                        <li>Selenium Trainers assist students in developing their resume
+                                                            matching the current industry needs</li>
+                                                        <li>We have a dedicated Placement support team wing that assist
+                                                            students in securing placement according to their
+                                                            requirements
+                                                        </li>
+                                                        <li>We will schedule Mock Exams and Mock Interviews to find out
+                                                            the
+                                                            GAP in Candidate Knowledge</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <ul class="list-column1">
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/cts.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-429" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/cts.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/cts.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-429 ls-is-cached lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/03/hdfc.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-5886" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/03/hdfc.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/03/hdfc.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-5886 ls-is-cached lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/03/dell.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-5886" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/03/dell.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/03/dell.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-5886 ls-is-cached lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/03/hp.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-5886" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/03/hp.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/03/hp.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-5886 ls-is-cached lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/google.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-432" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/google.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/google.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-432 ls-is-cached lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/amazon.png"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-428" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/amazon.png"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/amazon.png"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-428 lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/03/accenture.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-5884" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/03/accenture.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/03/accenture.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-5884 lazyloaded">
+                                                        </li>
+                                                        <li>
+                                                            <noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/sap.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-437" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/sap.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/sap.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-437 lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/tata.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-438" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/tata.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/tata.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-438 lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/paypal.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-436" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/paypal.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/paypal.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-436 lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/infosys.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-434" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/infosys.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/infosys.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-434 lazyloaded">
+                                                        </li>
+                                                        <li><noscript><img
+                                                                    src="https://www.acte.in/wp-content/uploads/2020/01/hcl.jpg"
+                                                                    alt="" width="160" height="90"
+                                                                    class="alignnone size-full wp-image-433" /></noscript><img
+                                                                src="https://www.acte.in/wp-content/uploads/2020/01/hcl.jpg"
+                                                                data-src="https://www.acte.in/wp-content/uploads/2020/01/hcl.jpg"
+                                                                alt="" width="160" height="90"
+                                                                class="alignnone size-full wp-image-433 lazyloaded">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Placements END -->
+                            </div>
+                            <div class="container post-sections" id="projects">
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <div class="piece-content">
+                                            <div class="clearfix">
+                                                <div class="heading-text">
+                                                    <h2>Projects
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-eq-height" id="project_tile">
+                                    
+                                </div>
+                            </div>                
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12" id="stick">
+                            <div class="col-md-12 plmreduce">
+                                <div class="custom-sidebar" id="upcoming_batches" style="padding:10px 20px;">
+                                    <div id="stick-contactform"></div>
+                                    <div id="stickThisContact">
+                                        <div class="contact_us">
+                                            <div class="contact_us_inner tabs-form">
+                                                <p>Get Training Quote for Free</p>
+                                                <ul class="nav course-detail nav-tabs nav-justified" id="myTab"
+                                                    role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                            href="#classroom" role="tab" aria-controls="classroom"
+                                                            aria-selected="true">
+                                                            <i class="fa fa-file-text mr-2"></i> Class Room</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="online-tab" data-toggle="tab"
+                                                            href="#online" role="tab" aria-controls="online"
+                                                            aria-selected="false">
+                                                            <i class="fa fa-laptop mr-2"></i> Online</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="">
+                                                    <div class="tab-pane fade show active" id="classroom"
+                                                        role="tabpanel" aria-labelledby="classroom-tab">
+                                                        <div role="form" class="wpcf7" id="wpcf7-f9647-o1" lang="en-US"
+                                                            dir="ltr">
+                                                            <div class="screen-reader-response"></div>
+                                                            <form action="/" method="post" class="wpcf7-form inputUI"
+                                                                novalidate="novalidate">
+                                                                <div style="display: none;">
+                                                                    <input type="hidden" name="_wpcf7" value="9647">
+                                                                    <input type="hidden" name="_wpcf7_version"
+                                                                        value="5.1.6">
+                                                                    <input type="hidden" name="_wpcf7_locale"
+                                                                        value="en_US">
+                                                                    <input type="hidden" name="_wpcf7_unit_tag"
+                                                                        value="wpcf7-f9647-o1">
+                                                                    <input type="hidden" name="_wpcf7_container_post"
+                                                                        value="0">
+                                                                </div>
+                                                                <div class="forms mt-3">
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap YourName"><input
+                                                                                type="text" name="YourName" value=""
+                                                                                size="40"
+                                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                                                aria-required="true"
+                                                                                aria-invalid="false"
+                                                                                placeholder="Your Name"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap youremail"><input
+                                                                                type="email" name="youremail" value=""
+                                                                                size="40"
+                                                                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                aria-required="true"
+                                                                                aria-invalid="false"
+                                                                                placeholder="Your Email"></span>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <span
+                                                                                    class="wpcf7-form-control-wrap mobilenumber"><input
+                                                                                        type="number"
+                                                                                        name="mobilenumber" value=""
+                                                                                        class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number form-control"
+                                                                                        aria-required="true"
+                                                                                        aria-invalid="false"
+                                                                                        placeholder="Mobile Number"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <select name="Howwhere"
+                                                                                    class="form-control">
+                                                                                    <option value="">How &amp; Where
+                                                                                    </option>
+                                                                                    <optgroup
+                                                                                        label="Classroom Training- Chennai">
+                                                                                        <option value="Velachery">
+                                                                                            Velachery</option>
+                                                                                        <option value="Anna Nagar">Anna
+                                                                                            Nagar</option>
+                                                                                        <option value="Tambaram">
+                                                                                            Tambaram</option>
+                                                                                        <option value="Porur">Porur
+                                                                                        </option>
+                                                                                        <option value="Tnagar">Tnagar
+                                                                                        </option>
+                                                                                        <option value="OMR">OMR</option>
+                                                                                        <option value="Siruseri">
+                                                                                            Siruseri</option>
+                                                                                        <option value="Adyar">Adyar
+                                                                                        </option>
+                                                                                        <option value="Thiruvanmiyur">
+                                                                                            Thiruvanmiyur</option>
+                                                                                        <option
+                                                                                            value="Maraimalai Nagar">
+                                                                                            Maraimalai Nagar
+                                                                                        </option>
+                                                                                    </optgroup>
+                                                                                    <optgroup label="Online Training">
+                                                                                        <option
+                                                                                            value="Yes, I'm Interested in Online Training">
+                                                                                            Yes, I'm Interested in
+                                                                                            Online Training</option>
+                                                                                    </optgroup>
+                                                                                    <optgroup
+                                                                                        label="Corporate Training">
+                                                                                        <option
+                                                                                            value="Yes, We're Interested in Corporate Training">
+                                                                                            Yes, We're Interested in
+                                                                                            Corporate Training
+                                                                                        </option>
+                                                                                    </optgroup>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group" style="display:none">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap training"><input
+                                                                                type="text" name="training"
+                                                                                value="Classs Room Training" size="40"
+                                                                                class="wpcf7-form-control wpcf7-text form-control"
+                                                                                aria-invalid="false"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap selectcourse"><input
+                                                                                id="autoCourse1" type="text"
+                                                                                name="selectcourse" value="" size="40"
+                                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                                                aria-required="true"
+                                                                                aria-invalid="false">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap yourmessage"><textarea
+                                                                                name="yourmessage" cols="40" rows="10"
+                                                                                class="wpcf7-form-control wpcf7-textarea form-control"
+                                                                                aria-invalid="false"
+                                                                                placeholder="Your Message"></textarea></span>
+                                                                    </div>
+                                                                    <div class="btn-set text-center clearfix">
+                                                                        <button type="reset" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Cancel</button><button
+                                                                            type="submit"
+                                                                            onclick="gtag_report_conversion();"
+                                                                            class="btn btn-primary">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="wpcf7-response-output wpcf7-display-none">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="online" role="tabpanel"
+                                                        aria-labelledby="online-tab">
+                                                        <div role="form" class="wpcf7" id="wpcf7-f5618-o2" lang="en-US"
+                                                            dir="ltr">
+                                                            <div class="screen-reader-response"></div>
+                                                            <form action="/selenium-training-in-chennai#wpcf7-f5618-o2"
+                                                                method="post" class="wpcf7-form"
+                                                                novalidate="novalidate">
+                                                                <div style="display: none;">
+                                                                    <input type="hidden" name="_wpcf7" value="5618">
+                                                                    <input type="hidden" name="_wpcf7_version"
+                                                                        value="5.1.6">
+                                                                    <input type="hidden" name="_wpcf7_locale"
+                                                                        value="en_US">
+                                                                    <input type="hidden" name="_wpcf7_unit_tag"
+                                                                        value="wpcf7-f5618-o2">
+                                                                    <input type="hidden" name="_wpcf7_container_post"
+                                                                        value="0">
+                                                                </div>
+                                                                <div class="forms mt-3">
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap YourName"><input
+                                                                                type="text" name="YourName" value=""
+                                                                                size="40"
+                                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                                                aria-required="true"
+                                                                                aria-invalid="false"
+                                                                                placeholder="Your Name"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap youremail"><input
+                                                                                type="email" name="youremail" value=""
+                                                                                size="40"
+                                                                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                aria-required="true"
+                                                                                aria-invalid="false"
+                                                                                placeholder="Your Email"></span>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <span
+                                                                                    class="wpcf7-form-control-wrap mobilenumber"><input
+                                                                                        type="number"
+                                                                                        name="mobilenumber" value=""
+                                                                                        class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number form-control"
+                                                                                        aria-required="true"
+                                                                                        aria-invalid="false"
+                                                                                        placeholder="Mobile Number"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <span
+                                                                                    class="wpcf7-form-control-wrap Howwhere"><input
+                                                                                        type="text" name="Howwhere"
+                                                                                        value="" size="40"
+                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                                                        aria-required="true"
+                                                                                        aria-invalid="false"
+                                                                                        placeholder="Your Location"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group" style="display:none">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap training"><input
+                                                                                type="text" name="training"
+                                                                                value="Online Training" size="40"
+                                                                                class="wpcf7-form-control wpcf7-text form-control"
+                                                                                aria-invalid="false"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap selectcourse"><input
+                                                                            id="autoCourse2"
+                                                                                type="text" name="selectcourse" value=""
+                                                                                size="40"
+                                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                                                aria-required="true"
+                                                                                aria-invalid="false"
+                                                                                placeholder=""></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <span
+                                                                            class="wpcf7-form-control-wrap yourmessage"><textarea
+                                                                                name="yourmessage" cols="40" rows="10"
+                                                                                class="wpcf7-form-control wpcf7-textarea form-control"
+                                                                                aria-invalid="false"
+                                                                                placeholder="Your Message"></textarea></span>
+                                                                    </div>
+                                                                    <div class="btn-set text-center clearfix">
+                                                                        <button type="reset" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Cancel</button><button
+                                                                            type="submit"
+                                                                            onclick="gtag_report_conversion();"
+                                                                            class="btn btn-primary">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="wpcf7-response-output wpcf7-display-none">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Content END-->
+
+            <!-- Footer ==== -->
+            <footer>
+                <div class="footer-top">
+                    <div class="pt-exebar">
+                        <div class="container">
+                            <div class="d-flex align-items-stretch">
+                                <div class="pt-logo mr-auto">
+                                    <a href="index.html"><img src="assets/images/logo-white.png" alt="" /></a>
+                                </div>
+                                <div class="pt-social-link">
+                                    <ul class="list-inline m-a0">
+                                        <li><a href="#" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="pt-btn-join">
+                                    <a href="#" class="btn ">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
+                                <div class="widget">
+                                    <h5 class="footer-title">Sign Up For A Newsletter</h5>
+                                    <p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge
+                                        advices
+                                        on job searching.</p>
+                                    <div class="subscribe-form m-b20">
+                                        <form class="subscription-form"
+                                            action="http://educhamp.themetrades.com/demo/assets/script/mailchamp.php"
+                                            method="post">
+                                            <div class="ajax-message"></div>
+                                            <div class="input-group">
+                                                <input name="email" required="required" class="form-control"
+                                                    placeholder="Your Email Address" type="email">
+                                                <span class="input-group-btn">
+                                                    <button name="submit" value="Submit" type="submit" class="btn"><i
+                                                            class="fa fa-arrow-right"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-7 col-sm-12">
+                                <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                                        <div class="widget footer_widget">
+                                            <h5 class="footer-title">Company</h5>
+                                            <ul>
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="about-1.html">About</a></li>
+                                                <li><a href="faq-1.html">FAQs</a></li>
+                                                <li><a href="contact-1.html">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                                        <div class="widget footer_widget">
+                                            <h5 class="footer-title">Get In Touch</h5>
+                                            <ul>
+                                                <li><a
+                                                        href="http://educhamp.themetrades.com/admin/index.html">Dashboard</a>
+                                                </li>
+                                                <li><a href="blog-classic-grid.html">Blog</a></li>
+                                                <li><a href="portfolio.html">Portfolio</a></li>
+                                                <li><a href="event.html">Event</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                                        <div class="widget footer_widget">
+                                            <h5 class="footer-title">Courses</h5>
+                                            <ul>
+                                                <li><a href="courses.html">Courses</a></li>
+                                                <li><a href="courses-details.html">Details</a></li>
+                                                <li><a href="membership.html">Membership</a></li>
+                                                <li><a href="profile.html">Profile</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+                                <div class="widget widget_gallery gallery-grid-4">
+                                    <h5 class="footer-title">Our Gallery</h5>
+                                    <ul class="magnific-image">
+                                        <li>
+                                            <a href="assets/images/gallery/pic1.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic1.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/images/gallery/pic2.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic2.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/images/gallery/pic3.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic3.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/images/gallery/pic4.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic4.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/images/gallery/pic5.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic5.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/images/gallery/pic6.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic6.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/images/gallery/pic7.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic7.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/images/gallery/pic8.jpg" class="magnific-anchor"><img
+                                                    src="assets/images/gallery/pic8.jpg" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 text-center"><a target="_blank"
+                                    href="https://www.templateshub.net">Templates Hub</a></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer END ==== -->
+            <button class="back-to-top fa fa-chevron-up"></button>
+        </div>
+        <!-- External JavaScripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+        <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+        <script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+        <script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+        <script src="assets/vendors/counter/waypoints-min.js"></script>
+        <script src="assets/vendors/counter/counterup.min.js"></script>
+        <script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+        <script src="assets/vendors/masonry/masonry.js"></script>
+        <script src="assets/vendors/masonry/filter.js"></script>
+        <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+        <script src="assets/js/jquery.scroller.js"></script>
+        <script src="assets/js/functions.js"></script>
+        <script src="assets/js/contact.js"></script>
+        <script src="assets/vendors/switcher/switcher.js"></script>
+</body>
+<script>
+    jQuery(document).ready(function () {
+        $('a[href^="#"]').click(function(event) {
+
+// The id of the section we want to go to.
+var id = $(this).attr("href");
+
+// An offset to push the content down from the top.
+var offset = 100;
+
+// Our scroll target : the top position of the
+// section that has the id referenced by our href.
+var target = $(id).offset().top - offset;
+
+// The magic...smooth scrollin' goodness.
+$('html, body').animate({scrollTop:target}, 500);
+
+//prevent the page from jumping down to our section.
+event.preventDefault();
+});
+        var elementPosition = $('#stick').offset();
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= $('#st').offset().top + $('#st').outerHeight() - window.innerHeight) {
+                $('#stick').css('position', 'static');
+            }
+            else if ($(window).scrollTop() > elementPosition.top) {
+                $('#stick').css('position', 'fixed').css({ "top": "66px", "right": "10px" });
+            } else {
+                $('#stick').css('position', 'static');
+            }
+        });
+        $.getJSON("assets/json/course_details.json", function (res) {
+            let courseid = Number(localStorage.getItem("courseId"))
+            document.getElementById("autoCourse1").value = res.courseName
+            document.getElementById("autoCourse2").value = res.courseName
+            document.getElementById("CoursesName").innerHTML = res.courseName
+            console.log(res.courseDetails.projects);
+            document.getElementById("project_tile").innerHTML = res.courseDetails.projects.map((p)=>{
+                return `
+                <div class="col-6">
+                                        <div class="recent-news h-100">
+                                            <div class="action-box ">
+                                                <img src="assets/images/blog/latest-blog/pic1.jpg " alt=" ">
+                                            </div>
+                                            <div class="card-header text-overflow">
+                                                
+                                                <h5 class="post-title" title="${p.projectName}"><a href="blog-details.html ">${p.projectName}</a></h5>         
+                                            </div>
+                                            <div class="card-bodys pb-0 m-b60">
+                                                <p>${p.projectDesc}
+                                                </p>
+                                            </div>
+                                            <div class="card-bodys pt-0 projecturl">
+                                               <a href=${p.projectUrl} class="btn btn-primary btn-sm btn-dark">Project Url</a>
+                                            </div>
+                                        </div>
+                                    </div>`
+            }).join(" ")
+            let bannerdesign = `<li> <strong>${res.courseDetails.bannerDetails.training}</strong> <span>Hands On Training</span></li>
+                            <li> <strong>${res.courseDetails.bannerDetails.projects}</strong> <span>Projects For Hands-On Learning</span></li>
+                            <li> <strong>${res.courseDetails.bannerDetails.assignment}</strong> <span>Practical Assignments</span></li>
+                            <li> <strong>${res.courseDetails.bannerDetails.lifetime}</strong> <span>Lifetime Course Material Access</span></li>`
+                            document.getElementById("bannerdetail").innerHTML = bannerdesign       
+            let batchData = res.courseDetails.batchs.map((e) => {
+                return ` <div class="col-md-12">
+                                                                                <div class="row batch-row align-items-center w-100">
+                                                                                                    <div class="col-md-3">
+                                                                                                        <div class="beforeline"></div>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        ${e.batchStartDate}
+                                        
+                                                                                                    </div>
+                                                                                                    <div class="col-md-3 border-left">
+                                                                                                        ${e.days}
+                                                                                                        <p class="sm-text mb-0">${e.mode}</p>
+                                                                                                    </div>
+                                                                                                    <div class="col-md-4">
+                                                                                                       <p class="sm-text mb-0 text-overflow" title="${e.timings}"> ${e.timings} Batches </p>
+                                                                                                        <p class="sm-text mb-0 text-overflow" title='${e.Coursehours}'>${e.Coursehours}
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                    <div class="col-md-2">
+                                                                                                        <button
+                                                                                                            class="btn btn-sm btn-primaryy btn-outline-primary"
+                                                                                                            data-toggle="modal"
+                                                                                                            data-target="#contactform">Course
+                                                                                                            Fees</button>
+                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                        `
+            })
+            let batchComma = batchData.join('');
+            document.getElementById("batch-table").innerHTML = batchComma;
+            let syllabusData = res.courseDetails.syllabus.map((e, i) => {
+                let subSyllabusData = res.courseDetails.syllabus[i].subtitles.map((sub, index) => {
+                    return `<div id="collapse${i}" class="collapse collapse${i}"
+                                                                                                    aria-labelledby="heading${i}"
+                                                                                                    data-parent="#accordionExample">
+                                                                                                    <div class="card-body pb-0">
+                                                                                                        <p class="mb-0 description"
+                                                                                                            
+                                                                                                            aria-expanded="true">
+                                                                                                            ${sub.name} <span></span>
+                                                                                                                    <span class="video-duration">${sub.duration}</span>
+                                                                                                        </p>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>`
+                })
+                let subSyllabusComma = subSyllabusData.join('');
+                return `<div class="card">
+                                                                                                <div class="card-head" id="heading${i}">
+                                                                                                    <h2 class="mb-0 collapsed" data-toggle="collapse"
+                                                                                                        data-target=".collapse${i}" aria-expanded="false"
+                                                                                                        aria-controls="collapse${i}">
+                                                                                                        ${e.headings}
+                                                                                                        <span class="video-duration">${e.duration}</span>
+                                                                                                    </h2>
+                                                                                                </div>
+                                                                                                ${subSyllabusComma}
+                                                                                            </div>`
+            })
+
+            let syllabusComma = syllabusData.join('');
+            document.getElementById("accordionExample").innerHTML = syllabusComma;
+        })
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: false,
+            margin: 10,
+            autoplay: false,
+            // autoplayTimeout: 1000,
+            // autoplayHoverPause: true
+        });
+        $('.owl-prev').text("<")
+        $('.owl-next').text(">")
+
+        $('.owl-nav').hide()
+        $('.owl-dots').hide()
+    });
+</script>
+<script>
+    window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("sticky-header-sm");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("custom-sticky-header");
+            } else {
+                header.classList.remove("custom-sticky-header");
+            }
+        }
+</script>
+
+</html>

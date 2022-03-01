@@ -1,0 +1,181 @@
+{
+  "topList": [
+    {
+      "topName": "Development",
+      "subList": [
+        {
+          "name": "Frontend",
+          "coursedetails": [
+            {
+              "courseId": 1,
+              "name": "HTML",
+              "reviewStars": 4,
+              "duration": "30-40 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 3000,
+              "discountPrice": 2000,
+              "studentCount" : 10,
+              "courseLevel": "Advanced",
+              "studentsEnrolled": "200+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            },
+            {
+              "courseId": 2,
+              "name": "CSS",
+              "reviewStars": 3,
+              "duration": "10-20 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 3000,
+              "discountPrice": 2000,
+              "studentCount" : 10,
+              "courseLevel": "Advanced",
+              "studentsEnrolled": "100+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            },
+            {
+              "courseId": 3,
+              "name": "javaScript",
+              "reviewStars": 2,
+              "duration": "40-50 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 4000,
+              "discountPrice": 2000,
+              "studentCount" : 10,
+              "courseLevel": "Intermediate",
+              "studentsEnrolled": "400+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "backend",
+          "coursedetails": [
+            {
+              "courseId": 4,
+              "name": "PHP",
+              "reviewStars": 4,
+              "duration": "30-40 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 3000,
+              "discountPrice": 2000,
+              "courseLevel": "Advanced",
+              "studentsEnrolled": "200+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            },
+            {
+              "courseId": 5,
+              "name": "Python",
+              "reviewStars": 3,
+              "duration": "10-20 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 3000,
+              "discountPrice": 2000,
+              "courseLevel": "Advanced",
+              "studentsEnrolled": "100+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            },
+            {
+              "courseId": 6,
+              "name": "Java",
+              "reviewStars": 2,
+              "duration": "40-50 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 4000,
+              "discountPrice": 2000,
+              "courseLevel": "Intermediate",
+              "studentsEnrolled": "400+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topName": "Design",
+      "subList": [
+        {
+          "name": "Graphic Designer",
+          "coursedetails": [
+            {
+              "courseId": 7,
+              "name": "Illustrator",
+              "reviewStars": 4,
+              "duration": "30-40 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 3000,
+              "discountPrice": 2000,
+              "courseLevel": "Advanced",
+              "studentsEnrolled": "200+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Animation",
+          "coursedetails": [
+            {
+              "courseId": 8,
+              "name": "Photoshop",
+              "reviewStars": 4,
+              "duration": "30-40 Hrs",
+              "mode": "online/offline",
+              "projectCount": 3,
+              "price": 3000,
+              "discountPrice": 2000,
+              "courseLevel": "Advanced",
+              "studentsEnrolled": "200+",
+              "descriptionHeadings": "Learn to build websites with HTML , CSS Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+              "descriptionSubHeading": [
+                "Create a fully functional web site using the Full-Stack with Django 1.11",
+                "Learn how to use HTML to create website content",
+                "Use CSS to create beautifully styled sites"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

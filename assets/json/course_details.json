@@ -1,0 +1,70 @@
+{
+  "courseId": 1,
+  "courseName":"Kubernets",
+  "courseDetails": {
+    "batchs":[
+      {"batchStartDate": "24-Jan-2022",
+      "Coursehours": "(Class 1Hr - 1:30Hrs) / Per Session",
+      "timings": "08:00 AM & 10:00 AM",
+      "days": "Mon-Fri",
+      "mode": "Weekdays Regular"},
+      {"batchStartDate": "26-Jan-2022",
+        "Coursehours": "(Class 3Hr - 4Hrs) / Per Session",
+        "timings": "10:00 AM & 02:00 PM",
+        "days": "Sat-Sun",
+        "mode": "Weekend Regular"}
+    ],
+    "bannerDetails":{
+      "training":"40+ Hrs",
+      "projects":"3+ Live",
+      "assignment":"25+",
+      "lifetime":"24/7"
+    },
+    "syllabus": [
+      {
+        "headings": "introduction",
+        "topics": 7,
+        "duration": "1 Hr",
+        "subtitles": [
+          {
+            "name": "Course Intro",
+            "duration": "20:30 min"
+          },
+          {
+            "name": "Certifications",
+            "duration": "30 min"
+          }
+        ]
+      },
+      {
+        "headings": "Core concept",
+        "topics": 7,
+        "duration": "5 Hr",
+        "subtitles": [
+          {
+            "name": "ETCD For Beginners",
+            "duration": "20 min"
+          },
+          {
+            "name": "Kubernetes",
+            "duration": "10 min"
+          }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "projectName": "billing",
+        "projectDesc": "It allows the users to enter the item, price per unit, and the quantity so the system automatically can calculate and generate bills for the purchase.",
+        "projectUrl": "https://github.com/abinesan1/dev"
+      },
+      {
+        "projectName": "Sports Management System",
+        "projectDesc": "It will create an interface for managing sports-related activities, as well as scheduling sporting events for a school, college, including info of events, players, prizes.",
+        "projectUrl": "https://github.com/abinesan1/dev"
+      }
+    ],"reviews":[{"studentName":"siva","role":"software Engineer","experience":"5+","rating":5,"review":"It is a great curse for beginners and for filling in some gaps for intermediate programmers. I wouldn't recommend it though for advanced programmers as the knowledge is rather basic and even at x2.0 speed it will become boring. Again, great course overall of beginners who want to get started with Java. Thanks!"},
+    {"studentName":"Senthil","role":"Java Developer","experience":"1+","rating":5,"review":"I had completed my java with advance in by ACTE. The best place to excel your next phase of career. The trainers and faculty here were very friendly and comfortable. My trainer had explained each and every topics clearly and he won't move to the another topic until I was clear in it. Thanks to my trainer and ACTE for this wonderful opportunity!!"}
+    ]
+  }
+}
